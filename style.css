@@ -1,87 +1,157 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 
 * {
   margin: 0;
   padding: 0;
 }
 
-.container {
-  padding: 20px;
-}
-
-img {
+.nav,
+.content,
+.footer {
   width: 100%;
 }
 
-h1 {
-  font-size: 40px;
-  line-height: 1.1em;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+.nav {
+  height: 60px;
 }
 
-span {
-  font-weight: 700;
-  padding: 5px;
-  background-color: #127681;
-  border-radius: 0.3em;
-  color: #fefefe;
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  font-size: 10px;
-  box-shadow: 0px 3px 4px #8ccbbe;
+.right-content,
+.left-content {
+  width: 100%;
 }
 
-a {
-  text-decoration: none;
-  color: #127681;
-  font-weight: 700;
-}
-
-p {
-  font-weight: 300;
-  font-family: "Roboto", sans-serif;
-  line-height: 1.6em;
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-img {
-  border-radius: 5px;
-  box-shadow: 0px 10px 10px #ddd;
-}
-
-footer {
+.right-content {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 40px;
 }
 
-.heart {
-  color: red;
+.inner-content {
+  width: 90%;
+  display: inline-block;
+  text-align: start;
 }
 
-@media (min-width: 486px) {
-  .container {
-    padding: 60px;
-  }
+.feature-img {
+  width: 100%;
+  margin: 0px 0 20px 0;
 }
 
-@media (min-width: 600px) {
-  .container {
-    width: 450px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
+.headline {
+  font-family: Sans-Serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #222831;
 }
 
-@media (min-width: 900px) {
-  .container {
-    width: 600px;
-  }
+.blockquote {
+  padding: 60px 0px 30px 0px;
+  position: relative;
+}
+.blockquote p {
+  font-size: 25px;
+  font-weight: 700px;
+}
+
+.blockquote:before {
+  position: absolute;
+  font-family: "FontAwesome";
+  top: 0;
+  content: "\f10d";
+  font-size: 70px;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.blockquote::after {
+  content: "";
+  top: 20px;
+  left: 50%;
+  margin-left: -80px;
+  position: absolute;
+  border-bottom: 3px solid #bf0024;
+  height: 3px;
+  width: 200px;
+}
+
+.nav-btn {
+  padding: 20px 30px;
+  height: 100%;
+  background-color: #32e0c4;
+  color: #000000;
+  text-decoration: none;
+  border: none;
+  font-size: 17px;
+  font-family: Arial;
+  cursor: pointer;
+  float: right;
+}
+
+.logo {
+  height: auto;
+  width: auto;
+  padding: 15px;
+  font-size: 25px;
+  font-family: "Poiret One", cursive;
+}
+
+.btn-start {
+  padding: 20px 30px;
+  height: 100%;
+  margin-bottom: 20px;
+  background-color: #32e0c4;
+  color: #000000;
+  text-decoration: none;
+  border: none;
+  font-size: 17px;
+  font-family: Arial;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.watch-txt {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Arial;
+  margin-bottom: 50px;
+}
+
+.sub-content {
+  text-align: center;
+}
+
+.card {
+  width: 90%;
+  display: inline-block;
+  text-align: start;
+}
+
+.card p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: Sans-Serif;
+}
+
+.card input {
+  width: 100%;
+  height: 40px;
+  font-size: 22px;
+  border: 1px solid #101010;
+}
+
+.card textarea {
+  width: 100%;
+  font-size: 22px;
+  height: 140px;
+  border: 1px solid #101010;
+  margin: 20px 0;
+}
+
+.footer {
+  text-align: center;
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  font-family: Sans-Serif;
+  color: #fff;
+  padding: 15px 0;
 }
